@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+        <link rel="stylesheet" href="./css/output.css" />
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+        <title>Tailwind Assignment</title>
+    </head>
+    <body>
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 py-3">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <img src="./images/Logo.png" class="h-8" alt="Tailwind Logo" />
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto mx-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                        </li>
+                        <li>
+                            <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                                <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                                <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="py-5 dark:bg-[#111827] px-10">
+            <div id="gallery" class="relative w-full" data-carousel="slide">
+                <div class="relative h-56 overflow-hidden md:h-96 rounded">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./images/1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active"><img src="./images/2.jpg"" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" /></div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item><img src="./images/3.jpg"" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" /></div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item><img src="./images/4.jpg"" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" /></div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item><img src="./images/5.jpg"" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" /></div>
+                </div>
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="dark:bg-[#111827] pt-5 pb-10">
+                <div class="title text-center py-5">
+                    <h2 class="font-sans font-extrabold text-6xl text-black dark:text-white pb-4">Tools</h2>
+                    <p class="text-black dark:text-white">Lorem ipsum dolor sit amet consectetur !</p>
+                </div>
+                <div class="grid gap-x-10 gap-y-10 sm:grid-cols-2 md:grid-cols-3 text-center pt-15 px-10">
+                    <div class="relative bg-white border rounded-xl shadow-md p-6">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-pink-100 rounded-full flex justify-center items-center border border-gray-200 shadow">
+                            <span class="text-2xl font-semibold"><i class="fab fa-amilia"></i></span>
+                        </div>
+                        <div class="text-center mt-6">
+                            <h3 class="text-4xl font-semibold">Product</h3>
+                            <div class="border-t-2 border-red-800 w-15 mx-auto mt-4"></div>
+                            <p class="text-gray-600 mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-white border rounded-xl shadow-md p-6">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-pink-100 rounded-full flex justify-center items-center border border-gray-200 shadow">
+                            <span class="text-2xl font-semibold"><i class="fab fa-angular"></i></span>
+                        </div>
+                        <div class="text-center mt-6">
+                            <h3 class="text-4xl font-semibold">Product</h3>
+                            <div class="border-t-2 border-red-800 w-15 mx-auto mt-4"></div>
+                            <p class="text-gray-600 mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-white border rounded-xl shadow-md p-6">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-pink-100 rounded-full flex justify-center items-center border border-gray-200 shadow">
+                            <span class="text-2xl font-semibold"><i class="fab fa-apple-pay"></i></span>
+                        </div>
+                        <div class="text-center mt-6">
+                            <h3 class="text-4xl font-semibold">Product</h3>
+                            <div class="border-t-2 border-red-800 w-15 mx-auto mt-4"></div>
+                            <p class="text-gray-600 mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-white border rounded-xl shadow-md p-6">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-pink-100 rounded-full flex justify-center items-center border border-gray-200 shadow">
+                            <span class="text-2xl font-semibold"><i class="fab fa-bitcoin"></i></span>
+                        </div>
+                        <div class="text-center mt-6">
+                            <h3 class="text-4xl font-semibold">Product</h3>
+                            <div class="border-t-2 border-red-800 w-15 mx-auto mt-4"></div>
+                            <p class="text-gray-600 mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-white border rounded-xl shadow-md p-6">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-pink-100 rounded-full flex justify-center items-center border border-gray-200 shadow">
+                            <span class="text-2xl font-semibold"><i class="fab fa-airbnb"></i></span>
+                        </div>
+                        <div class="text-center mt-6">
+                            <h3 class="text-4xl font-semibold">Product</h3>
+                            <div class="border-t-2 border-red-800 w-15 mx-auto mt-4"></div>
+                            <p class="text-gray-600 mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="relative bg-white border rounded-xl shadow-md p-6">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-pink-100 rounded-full flex justify-center items-center border border-gray-200 shadow">
+                            <span class="text-2xl font-semibold"><i class="fab fa-accusoft"></i></span>
+                        </div>
+                        <div class="text-center mt-6">
+                            <h3 class="text-4xl font-semibold">Product</h3>
+                            <div class="border-t-2 border-red-800 w-15 mx-auto mt-4"></div>
+                            <p class="text-gray-600 mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-[#212529] text-gray-300 py-10">
+            <div class="container mx-auto flex justify-around items-center">
+                <div class="flex items-center">
+                    <button aria-label="AppStore">
+                        <img src="./images/Footer.png" alt="" />
+                    </button>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#" class="text-gray-300 hover:text-white transition" aria-label="Facebook">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition" aria-label="Twitter">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition" aria-label="YouTube">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
